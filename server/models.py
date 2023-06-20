@@ -1,8 +1,4 @@
-# app/models.py
-
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import MetaData
-from models import db
+from app import db
 
 class Owner(db.Model):
     __tablename__ = 'owners'
@@ -26,5 +22,7 @@ class Pet(db.Model):
 
     def __repr__(self):
         return f'<Pet {self.name}, {self.species}>'
+
+
 
 

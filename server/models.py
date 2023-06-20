@@ -2,7 +2,7 @@
 
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
-db = SQLAlchemy()
+from models import db
 
 class Owner(db.Model):
     __tablename__ = 'owners'
